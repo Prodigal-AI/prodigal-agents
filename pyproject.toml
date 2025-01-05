@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "prodigal-agents"
+version = "0.1.0"
+description = "A multi-agent framework for intelligent and collaborative AI systems"
+authors = ["Prodigal AI <contact@prodigalai.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "^2.0"
+openai = "^0.27"
+pytest = "^8.3.4"
+
+[tool.poetry.group.dev.dependencies]
+mkdocs = "^1.6.1"
+mkdocs-material = "^9.5.49"
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"

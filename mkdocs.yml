@@ -1,0 +1,8 @@
+site_name: Prodigal Agents
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Usage: usage.md
+  - API Reference: api.md
