@@ -1,19 +1,20 @@
 [tool.poetry]
 name = "prodigal-agents"
 version = "0.1.0"
-description = "A multi-agent framework for intelligent and collaborative AI systems"
+description = "Core Agent SDK for Prodigal AI"
 authors = ["Prodigal AI <contact@prodigalai.com>"]
+packages = [{include = "prodigal_agents", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
 pydantic = "^2.0"
-openai = "^0.27"
-pytest = "^8.3.4"
+requests = "^2.31.0"
 
-[tool.poetry.group.dev.dependencies]
-mkdocs = "^1.6.1"
-mkdocs-material = "^9.5.49"
+[tool.poetry.dev-dependencies]
+pytest = "^7.2"
+black = "^24.0"
+flake8 = "^5.0"
 
 [build-system]
-requires = ["poetry>=1.0"]
-build-backend = "poetry.masonry.api"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
